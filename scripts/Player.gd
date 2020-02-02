@@ -5,14 +5,13 @@ extends KinematicBody2D
 # var b = "textvar"
 
 var velocidad = Vector2()
-export var speed =700
+export var speed =400
 var gravedad = 1000
 var jump = -450
 var normal = Vector2(0,-1)
 var jumping = false
-var buenaOpcion = false 
 
-var cuadroActividad = false
+signal activar_cuadro
 
 func _ready():
 	# Called when the node is added to the scene for the first time.
@@ -22,9 +21,6 @@ func _ready():
 func _physics_process(delta):
 	
 	#############################
-	if Input.is_action_pressed("tecla_w") and cuadroActividad:
-		pass
-		pass
 	
 	
 	if !$AnimationPlayer.is_playing():
@@ -67,8 +63,8 @@ func get_input():
 	pass
 	
 func activarCuadro():
-	cuadroActividad = true
-	print(cuadroActividad)
+	print("Memo")
+	emit_signal("activar_cuadro")
 	pass
 
 func _on_romper_body_entered(body):

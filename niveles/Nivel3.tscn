@@ -1,17 +1,21 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=6 format=2]
 
-[ext_resource path="res://background/ParallaxBg3.tscn" type="PackedScene" id=1]
-[ext_resource path="res://terrain/suelos.tres" type="TileSet" id=2]
-[ext_resource path="res://player/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://niveles/Nivel3.gd" type="Script" id=1]
+[ext_resource path="res://background/ParallaxBg3.tscn" type="PackedScene" id=2]
+[ext_resource path="res://terrain/suelos.tres" type="TileSet" id=3]
+[ext_resource path="res://player/Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Entrada4.tscn" type="PackedScene" id=5]
 
-[node name="Nivel3" type="Node" index="0"]
+[node name="Nivel3" type="Node"]
 
-[node name="ParallaxBg3" parent="." index="0" instance=ExtResource( 1 )]
+script = ExtResource( 1 )
+
+[node name="ParallaxBg3" parent="." index="0" instance=ExtResource( 2 )]
 
 [node name="TileMap" type="TileMap" parent="." index="1"]
 
 mode = 0
-tile_set = ExtResource( 2 )
+tile_set = ExtResource( 3 )
 cell_size = Vector2( 64, 64 )
 cell_quadrant_size = 16
 cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
@@ -32,6 +36,7 @@ tile_data = PoolIntArray( 524288, 2, 0, 524289, 2, 0, 524290, 2, 0, 524291, 2, 0
 "rampa",
 ]]
 
+editor/display_folded = true
 input_pickable = false
 collision_layer = 1
 collision_mask = 1
@@ -64,9 +69,13 @@ position = Vector2( -11.1581, 25.1056 )
 build_mode = 0
 polygon = PoolVector2Array( 758.597, 509.431, 1587.08, 328.113, 1589.87, 515.01, 1210.5, 503.852 )
 
-[node name="Player" parent="." index="3" instance=ExtResource( 3 )]
+[node name="Player" parent="." index="3" instance=ExtResource( 4 )]
 
-position = Vector2( 584.874, 405.792 )
+position = Vector2( 155.991, 435.225 )
 speed = 200
+
+[node name="Entrada4" parent="." index="4" instance=ExtResource( 5 )]
+
+position = Vector2( 1151.19, 335.55 )
 
 

@@ -15,3 +15,27 @@ func _ready():
 #	# Update game logic here.
 #	pass
 
+
+
+func _on_Player_activar_cuadro():
+	$ButtonYes.visible = true
+	pass # replace with function body
+
+
+func _on_ButtonYes_pressed():
+	
+	$AnimationPlayer.play("caer_arbol")
+	$ButtonYes.visible = false
+	pass # replace with function body
+
+
+func _on_PuertaDeTransicion_emitirFade_in():
+	
+	$Fade_in.show()
+	$Fade_in.fade_in()
+	pass # replace with function body
+
+
+func _on_Fade_in_fade_finisched():
+	get_tree().change_scene("res://niveles/Nivel3.tscn")
+	pass # replace with function body

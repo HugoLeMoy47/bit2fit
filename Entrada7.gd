@@ -3,7 +3,6 @@ extends Area2D
 # class member variables go here, for example:
 # var a = 2
 # var b = "textvar"
-signal habilitarOpcion
 
 func _ready():
 	# Called when the node is added to the scene for the first time.
@@ -16,7 +15,5 @@ func _ready():
 #	pass
 
 
-func _on_ActividadorOpciones_body_entered(body):
-	if body.is_in_group("player"):
-		body.activarCuadro()
+func _on_Entrada7_body_entered(body):
 	pass # replace with function body
