@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/SFXdeFondoEnEscena02.wav-f82789b0913472c2447d82cdb3bff878.sample"
+
+[deps]
+
+source_file="res://Musica/SFX/EscenaCasaLluvia/SFXdeFondoEnEscena02.wav"
+dest_files=[ "res://.import/SFXdeFondoEnEscena02.wav-f82789b0913472c2447d82cdb3bff878.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

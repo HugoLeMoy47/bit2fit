@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/SFXdeFondoEnEscena01.ogg-53a38ad48fa89d08c9853c86e4b36b04.oggstr"
+
+[deps]
+
+source_file="res://Musica/SFX/EscenaCasaLluvia/SFXdeFondoEnEscena01.ogg"
+dest_files=[ "res://.import/SFXdeFondoEnEscena01.ogg-53a38ad48fa89d08c9853c86e4b36b04.oggstr" ]
+
+[params]
+
+loop=true
+loop_offset=0

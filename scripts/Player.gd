@@ -5,7 +5,7 @@ extends KinematicBody2D
 # var b = "textvar"
 
 var velocidad = Vector2()
-export var speed =400
+export var speed =500
 var gravedad = 1000
 var jump = -450
 var normal = Vector2(0,-1)

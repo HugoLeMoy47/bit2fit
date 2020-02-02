@@ -16,5 +16,5 @@ func _ready():
 
 
 func _on_Entrada4_body_entered(body):
-	get_tree().change_scene("res://niveles/Nivel5.tscn")
+	get_tree().change_scene("res://niveles/Bloque6.tscn")
 	pass # replace with function body

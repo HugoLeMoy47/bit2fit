@@ -172,7 +172,7 @@ blend_times = [  ]
 
 [node name="entrada2" parent="." index="10" instance=ExtResource( 9 )]
 
-position = Vector2( 1052.44, 288.067 )
+position = Vector2( 1055.3, 288.067 )
 
 [connection signal="activar_cuadro" from="Player" to="." method="_on_Player_activar_cuadro"]
 

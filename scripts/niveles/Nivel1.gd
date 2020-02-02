@@ -37,5 +37,5 @@ func _on_PuertaDeTransicion_emitirFade_in():
 
 
 func _on_Fade_in_fade_finisched():
-	get_tree().change_scene("res://niveles/Nivel3.tscn")
+	get_tree().change_scene("res://niveles/Nivel2.tscn")
 	pass # replace with function body
