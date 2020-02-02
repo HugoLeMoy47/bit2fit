@@ -4,6 +4,8 @@
 
 [node name="terrein" type="Node2D"]
 
+_sections_unfolded = [ "Material", "Transform", "Visibility", "Z Index" ]
+
 [node name="Sprite" type="Sprite" parent="." index="0"]
 
 texture = ExtResource( 1 )
