@@ -5,11 +5,14 @@ extends KinematicBody2D
 # var b = "textvar"
 
 var velocidad = Vector2()
-export var speed = 100
+export var speed =700
 var gravedad = 1000
 var jump = -450
 var normal = Vector2(0,-1)
 var jumping = false
+var buenaOpcion = false 
+
+var cuadroActividad = false
 
 func _ready():
 	# Called when the node is added to the scene for the first time.
@@ -17,6 +20,13 @@ func _ready():
 	pass
 
 func _physics_process(delta):
+	
+	#############################
+	if Input.is_action_pressed("tecla_w") and cuadroActividad:
+		pass
+		pass
+	
+	
 	if !$AnimationPlayer.is_playing():
 		$AnimationPlayer.play("idle")
 		velocidad.x = 0
@@ -26,9 +36,10 @@ func _physics_process(delta):
 	if jumping and is_on_floor():
         jumping = false
 	velocidad = move_and_slide(velocidad, normal)
+	#print(velocidad)
 	pass
-
-
+	
+	
 func get_input():
 	if !$AnimationPlayer.is_playing() or $AnimationPlayer.current_animation == "idle":
 		if Input.is_action_pressed("ui_right"):
@@ -54,7 +65,11 @@ func get_input():
 			velocidad.x = 0
 			
 	pass
-
+	
+func activarCuadro():
+	cuadroActividad = true
+	print(cuadroActividad)
+	pass
 
 func _on_romper_body_entered(body):
 	if body.is_in_group("obstaculo"):

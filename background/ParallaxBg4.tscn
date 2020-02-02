@@ -1,0 +1,209 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://assets/Tree/Arboles_Aislados.png" type="Texture" id=1]
+[ext_resource path="res://assets/Tree/Arboles_Aislado_2.png" type="Texture" id=2]
+[ext_resource path="res://assets/Tree/Arboles_Aislado_3.png" type="Texture" id=3]
+
+[node name="ParallaxBg4" type="ParallaxBackground" index="0"]
+
+layer = -1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+scroll_offset = Vector2( 0, 0 )
+scroll_base_offset = Vector2( 0, 0 )
+scroll_base_scale = Vector2( 1, 1 )
+scroll_limit_begin = Vector2( 0, 0 )
+scroll_limit_end = Vector2( 0, 0 )
+scroll_ignore_camera_zoom = false
+
+[node name="fondo" type="ParallaxLayer" parent="." index="0"]
+
+editor/display_folded = true
+motion_scale = Vector2( 1, 1 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 0, 0 )
+
+[node name="ColorRect" type="ColorRect" parent="fondo" index="0"]
+
+modulate = Color( 0.788235, 0.964706, 0.815686, 1 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 960.0
+margin_bottom = 536.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 1, 1, 1, 1 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="Arbol1" type="ParallaxLayer" parent="." index="1"]
+
+editor/display_folded = true
+motion_scale = Vector2( 1, 1 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 0, 0 )
+
+[node name="Sprite" type="Sprite" parent="Arbol1" index="0"]
+
+modulate = Color( 0.172549, 0.415686, 0.0117647, 1 )
+position = Vector2( 524.762, 257.834 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 1 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="Arbol5" type="ParallaxLayer" parent="." index="2"]
+
+position = Vector2( 357.501, 14.3 )
+motion_scale = Vector2( 1, 1 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 0, 0 )
+
+[node name="Sprite" type="Sprite" parent="Arbol5" index="0"]
+
+modulate = Color( 0.172549, 0.415686, 0.0117647, 1 )
+position = Vector2( 524.762, 257.834 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 1 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="Arbol6" type="ParallaxLayer" parent="." index="3"]
+
+editor/display_folded = true
+position = Vector2( 128.7, 25.7401 )
+motion_scale = Vector2( 1, 1 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 0, 0 )
+
+[node name="Sprite" type="Sprite" parent="Arbol6" index="0"]
+
+modulate = Color( 0.172549, 0.415686, 0.0117647, 1 )
+position = Vector2( 524.762, 257.834 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 1 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="Arbol7" type="ParallaxLayer" parent="." index="4"]
+
+editor/display_folded = true
+position = Vector2( -188.761, 17.16 )
+motion_scale = Vector2( 1, 1 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 0, 0 )
+
+[node name="Sprite" type="Sprite" parent="Arbol7" index="0"]
+
+modulate = Color( 0.172549, 0.415686, 0.0117647, 1 )
+position = Vector2( 524.762, 257.834 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 1 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="Arbol4" type="ParallaxLayer" parent="." index="5"]
+
+editor/display_folded = true
+position = Vector2( -311.741, 17.1601 )
+motion_scale = Vector2( 1, 1 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 0, 0 )
+
+[node name="Sprite" type="Sprite" parent="Arbol4" index="0"]
+
+modulate = Color( 0.172549, 0.415686, 0.0117647, 1 )
+position = Vector2( 479.002, 246.394 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 1 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="Arbol2" type="ParallaxLayer" parent="." index="6"]
+
+editor/display_folded = true
+motion_scale = Vector2( 1, 1 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 0, 0 )
+
+[node name="Sprite" type="Sprite" parent="Arbol2" index="0"]
+
+modulate = Color( 0.0509804, 0.243137, 0.0627451, 1 )
+position = Vector2( 71.9579, 304.226 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="Sprite2" type="Sprite" parent="Arbol2" index="1"]
+
+modulate = Color( 0.0509804, 0.243137, 0.0627451, 1 )
+position = Vector2( 901.36, 301.366 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="Sprite3" type="Sprite" parent="Arbol2" index="2"]
+
+modulate = Color( 0.0509804, 0.243137, 0.0627451, 1 )
+position = Vector2( 652.54, 304.226 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="Sprite4" type="Sprite" parent="Arbol2" index="3"]
+
+modulate = Color( 0.0509804, 0.243137, 0.0627451, 1 )
+position = Vector2( 366.539, 301.366 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="Arbol3" type="ParallaxLayer" parent="." index="7"]
+
+editor/display_folded = true
+position = Vector2( 826.814, 352.918 )
+motion_scale = Vector2( 1, 1 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 0, 0 )
+
+[node name="Sprite" type="Sprite" parent="Arbol3" index="0"]
+
+modulate = Color( 0.352941, 0.654902, 0.294118, 1 )
+position = Vector2( -48.6202, -68.6402 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="Arbol8" type="ParallaxLayer" parent="." index="8"]
+
+editor/display_folded = true
+position = Vector2( 457.873, 289.998 )
+motion_scale = Vector2( 1, 1 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 0, 0 )
+
+[node name="Sprite" type="Sprite" parent="Arbol8" index="0"]
+
+modulate = Color( 0.352941, 0.654902, 0.294118, 1 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="Arbol9" type="ParallaxLayer" parent="." index="9"]
+
+position = Vector2( 154.712, 287.138 )
+motion_scale = Vector2( 1, 1 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 0, 0 )
+
+[node name="Sprite" type="Sprite" parent="Arbol9" index="0"]
+
+modulate = Color( 0.352941, 0.654902, 0.294118, 1 )
+position = Vector2( 8.58002, 14.3 )
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+

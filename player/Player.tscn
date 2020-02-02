@@ -11,7 +11,7 @@ extents = Vector2( 12.226, 10 )
 [sub_resource type="RectangleShape2D" id=2]
 
 custom_solver_bias = 0.0
-extents = Vector2( 10.4342, 16.4154 )
+extents = Vector2( 10, 18.2067 )
 
 [sub_resource type="Animation" id=3]
 
@@ -80,7 +80,7 @@ tracks/0/keys = {
 "values": [ 0, 1, 2, 3 ]
 }
 
-[node name="Player" type="KinematicBody2D" index="0" groups=[
+[node name="Player" type="KinematicBody2D" groups=[
 "player",
 ]]
 
@@ -91,6 +91,7 @@ collision_layer = 1
 collision_mask = 1
 collision/safe_margin = 0.08
 script = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
 speed = 150
 
 [node name="Sprite" type="Sprite" parent="." index="0"]
@@ -102,7 +103,7 @@ texture = ExtResource( 2 )
 vframes = 2
 hframes = 4
 frame = 4
-_sections_unfolded = [ "Animation", "Visibility" ]
+_sections_unfolded = [ "Animation", "Transform", "Visibility", "Z Index" ]
 
 [node name="romper" type="Area2D" parent="Sprite" index="0"]
 
@@ -127,9 +128,10 @@ disabled = true
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." index="1"]
 
-position = Vector2( -0.900862, 0.406599 )
-scale = Vector2( 2.57305, 2.6069 )
+position = Vector2( -4.45032, 1.18279 )
+scale = Vector2( 2.30001, 2.43072 )
 shape = SubResource( 2 )
+_sections_unfolded = [ "Transform" ]
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." index="2"]
 

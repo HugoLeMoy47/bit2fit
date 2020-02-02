@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/Tree/Arboles_Aislado_2.png" type="Texture" id=1]
+
+[node name="Arbol_aislado2" type="Sprite"]
+
+scale = Vector2( 0.5, 0.5 )
+texture = ExtResource( 1 )
+_sections_unfolded = [ "Transform" ]
+
+

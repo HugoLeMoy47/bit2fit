@@ -3,16 +3,18 @@
 [ext_resource path="res://niveles/Nivel0.gd" type="Script" id=1]
 [ext_resource path="res://GUI/GUI.tscn" type="PackedScene" id=2]
 [ext_resource path="res://transiciones/Fade_in.tscn" type="PackedScene" id=3]
-[ext_resource path="res://terrain/piso.tres" type="TileSet" id=4]
-[ext_resource path="res://player/Player.tscn" type="PackedScene" id=5]
-[ext_resource path="res://escenas/miscelanio/PuertaDeTransicion.tscn" type="PackedScene" id=6]
-[ext_resource path="res://background/ParallaxBackground.tscn" type="PackedScene" id=7]
+[ext_resource path="res://player/Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://escenas/miscelanio/PuertaDeTransicion.tscn" type="PackedScene" id=5]
+[ext_resource path="res://background/ParallaxBackground.tscn" type="PackedScene" id=6]
+[ext_resource path="res://terrain/suelos.tres" type="TileSet" id=7]
 
-[node name="Nivel0" type="Node"]
+[node name="Nivel0" type="Node" index="0"]
 
 script = ExtResource( 1 )
 
 [node name="GUI" parent="." index="0" instance=ExtResource( 2 )]
+
+editor/display_folded = true
 
 [node name="Fade_in" parent="GUI" index="3" instance=ExtResource( 3 )]
 
@@ -21,10 +23,20 @@ margin_top = -0.262512
 margin_right = -0.322266
 margin_bottom = -0.262512
 
-[node name="TileMap" type="TileMap" parent="." index="1"]
+[node name="Player" parent="." index="1" instance=ExtResource( 4 )]
+
+position = Vector2( 262.214, 371.005 )
+
+[node name="PuertaDeTransicion" parent="." index="2" instance=ExtResource( 5 )]
+
+position = Vector2( 1133.54, 304.278 )
+
+[node name="ParallaxBackground" parent="." index="3" instance=ExtResource( 6 )]
+
+[node name="TileMap" type="TileMap" parent="." index="4"]
 
 mode = 0
-tile_set = ExtResource( 4 )
+tile_set = ExtResource( 7 )
 cell_size = Vector2( 64, 64 )
 cell_quadrant_size = 16
 cell_custom_transform = Transform2D( 1, 0, 0, 1, 0, 0 )
@@ -39,18 +51,7 @@ collision_layer = 1
 collision_mask = 1
 occluder_light_mask = 1
 format = 1
-tile_data = PoolIntArray( 589818, 0, 0, 589819, 0, 0, 589820, 0, 0, 589821, 0, 0, 589822, 0, 0, 589823, 0, 0, 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 524296, 0, 0, 524297, 0, 0, 524298, 0, 0, 524299, 0, 0, 524300, 0, 0, 524301, 0, 0, 524302, 0, 0, 524303, 0, 0, 524304, 0, 0, 524305, 0, 0, 524306, 0, 0, 524307, 0, 0, 524308, 0, 0, 524309, 0, 0, 524310, 0, 0, 524311, 0, 0, 524312, 0, 0, 524313, 0, 0, 524314, 0, 0, 524315, 0, 0, 524316, 0, 0, 524317, 0, 0, 524318, 0, 0, 524319, 0, 0, 524320, 0, 0, 524321, 0, 0, 524322, 0, 0, 524323, 0, 0, 524324, 0, 0, 524325, 0, 0, 524326, 0, 0, 524327, 0, 0, 524328, 0, 0, 524329, 0, 0, 524330, 0, 0, 524331, 0, 0, 524332, 0, 0, 524333, 0, 0, 524334, 0, 0, 655354, 0, 0, 655355, 0, 0, 655356, 0, 0, 655357, 0, 0, 655358, 0, 0, 655359, 0, 0, 589824, 0, 0, 589825, 0, 0, 589826, 0, 0, 589827, 0, 0, 589828, 0, 0, 589829, 0, 0, 589830, 0, 0, 589831, 0, 0, 589832, 0, 0, 589833, 0, 0, 589834, 0, 0, 589835, 0, 0, 589836, 0, 0, 589837, 0, 0, 589838, 0, 0, 589839, 0, 0, 589840, 0, 0, 589841, 0, 0, 589842, 0, 0, 589843, 0, 0, 589844, 0, 0, 589845, 0, 0, 589846, 0, 0, 589847, 0, 0, 589848, 0, 0, 589849, 0, 0, 589850, 0, 0, 589851, 0, 0, 589852, 0, 0, 589853, 0, 0, 589854, 0, 0, 589855, 0, 0, 589856, 0, 0, 589857, 0, 0, 589858, 0, 0, 589859, 0, 0, 589860, 0, 0, 589861, 0, 0, 589862, 0, 0, 589863, 0, 0, 589864, 0, 0, 589865, 0, 0, 589866, 0, 0, 589867, 0, 0, 589868, 0, 0, 589869, 0, 0, 589870, 0, 0 )
-_sections_unfolded = [ "Cell" ]
-
-[node name="Player" parent="." index="2" instance=ExtResource( 5 )]
-
-position = Vector2( 262.214, 371.005 )
-
-[node name="PuertaDeTransicion" parent="." index="3" instance=ExtResource( 6 )]
-
-position = Vector2( 1133.54, 304.278 )
-
-[node name="ParallaxBackground" parent="." index="4" instance=ExtResource( 7 )]
+tile_data = PoolIntArray( 524288, 0, 0, 524289, 0, 0, 524290, 0, 0, 524291, 0, 0, 524292, 0, 0, 524293, 0, 0, 524294, 0, 0, 524295, 0, 0, 524296, 0, 0, 524297, 0, 0, 524298, 0, 0, 524299, 0, 0, 524300, 0, 0, 524301, 0, 0, 524302, 0, 0, 524303, 0, 0, 524304, 0, 0, 524305, 0, 0, 524306, 0, 0, 524307, 0, 0, 589824, 0, 0, 589825, 0, 0, 589826, 0, 0, 589827, 0, 0, 589828, 0, 0, 589829, 0, 0, 589830, 0, 0, 589831, 0, 0, 589832, 0, 0, 589833, 0, 0, 589834, 0, 0, 589835, 0, 0, 589836, 0, 0, 589837, 0, 0, 589838, 0, 0, 589839, 0, 0, 589840, 0, 0, 589841, 0, 0, 589842, 0, 0, 589843, 0, 0 )
 
 [connection signal="fade_finisched" from="GUI/Fade_in" to="." method="_on_Fade_in_fade_finisched"]
 
