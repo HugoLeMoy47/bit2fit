@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/PerroQueLadra.wav-5a480c5e561cad0df1ed244ddde74a89.sample"
+
+[deps]
+
+source_file="res://Musica/SFX/EscenaPerroEnRio/PerroQueLadra.wav"
+dest_files=[ "res://.import/PerroQueLadra.wav-5a480c5e561cad0df1ed244ddde74a89.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=true
+edit/normalize=true
+edit/loop=false
+compress/mode=0

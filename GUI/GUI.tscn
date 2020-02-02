@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=13 format=2]
 
 [ext_resource path="res://assets/botones/transparentDark24.png" type="Texture" id=1]
 [ext_resource path="res://assets/botones/lineDark21.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://assets/botones/transparentDark36.png" type="Texture" id=7]
 [ext_resource path="res://assets/botones/lineDark33.png" type="Texture" id=8]
 [ext_resource path="res://fonts/emma_sophiaG/emmasophia.ttf" type="DynamicFontData" id=9]
+[ext_resource path="res://escenas/items/Heart.tscn" type="PackedScene" id=10]
 
 [sub_resource type="DynamicFont" id=1]
 
@@ -167,5 +168,9 @@ percent_visible = 1.0
 lines_skipped = 0
 max_lines_visible = -1
 _sections_unfolded = [ "custom_fonts" ]
+
+[node name="Heart" parent="." index="2" instance=ExtResource( 10 )]
+
+position = Vector2( 512, 80 )
 
 

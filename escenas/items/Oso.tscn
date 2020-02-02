@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://assets/items/OSO SHEET.png" type="Texture" id=1]
+
+[node name="Oso" type="Sprite" index="0"]
+
+modulate = Color( 0.00784314, 0.203922, 0.137255, 1 )
+position = Vector2( -215.986, -107.993 )
+scale = Vector2( 0.568028, 0.568028 )
+texture = ExtResource( 1 )
+vframes = 6
+_sections_unfolded = [ "Animation", "Visibility" ]
+
+

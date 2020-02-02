@@ -1,0 +1,102 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/background2/BG1.png" type="Texture" id=1]
+[ext_resource path="res://assets/background2/BG2.png" type="Texture" id=2]
+[ext_resource path="res://assets/background2/BG3.png" type="Texture" id=3]
+[ext_resource path="res://assets/background2/BG4.png" type="Texture" id=4]
+
+[node name="ParallaxBackground" type="ParallaxBackground"]
+
+layer = -1
+offset = Vector2( 0, 0 )
+rotation = 0.0
+scale = Vector2( 1, 1 )
+transform = Transform2D( 1, 0, 0, 1, 0, 0 )
+scroll_offset = Vector2( 0, 0 )
+scroll_base_offset = Vector2( 0, 0 )
+scroll_base_scale = Vector2( 1, 1 )
+scroll_limit_begin = Vector2( 0, 0 )
+scroll_limit_end = Vector2( 0, 0 )
+scroll_ignore_camera_zoom = false
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="." index="0"]
+
+motion_scale = Vector2( 1, 1 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 0, 0 )
+
+[node name="ColorRect" type="ColorRect" parent="ParallaxLayer5" index="0"]
+
+modulate = Color( 0.784314, 0.929412, 0.858824, 1 )
+anchor_left = 0.0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+margin_right = 1025.0
+margin_bottom = 602.0
+rect_pivot_offset = Vector2( 0, 0 )
+rect_clip_content = false
+mouse_filter = 0
+mouse_default_cursor_shape = 0
+size_flags_horizontal = 1
+size_flags_vertical = 1
+color = Color( 1, 1, 1, 1 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="." index="1"]
+
+motion_scale = Vector2( 1, 1 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 0, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer" index="0"]
+
+modulate = Color( 0.639216, 0.843137, 0.65098, 1 )
+position = Vector2( 525.212, 301.256 )
+scale = Vector2( 0.548995, 0.548995 )
+texture = ExtResource( 1 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="." index="2"]
+
+motion_scale = Vector2( 1, 1 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 0, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer2" index="0"]
+
+modulate = Color( 0.305882, 0.6, 0.458824, 1 )
+position = Vector2( 517.198, 390.147 )
+scale = Vector2( 0.521357, 0.521357 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="." index="3"]
+
+motion_scale = Vector2( 1, 1 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 0, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer3" index="0"]
+
+modulate = Color( 0.0156863, 0.352941, 0.192157, 1 )
+position = Vector2( 523.596, 313.799 )
+scale = Vector2( 0.548745, 0.575824 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Transform", "Visibility", "Z Index" ]
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="." index="4"]
+
+motion_scale = Vector2( 1, 1 )
+motion_offset = Vector2( 0, 0 )
+motion_mirroring = Vector2( 0, 0 )
+
+[node name="Sprite" type="Sprite" parent="ParallaxLayer4" index="0"]
+
+modulate = Color( 0.00784314, 0.203922, 0.137255, 1 )
+position = Vector2( 533.979, 314.38 )
+scale = Vector2( 0.549893, 0.580036 )
+texture = ExtResource( 4 )
+_sections_unfolded = [ "Transform", "Visibility" ]
+
+

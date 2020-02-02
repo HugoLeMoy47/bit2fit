@@ -1,0 +1,55 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://assets/items/ARBOL BLOQUE FINAL.png" type="Texture" id=1]
+[ext_resource path="res://assets/items/BACULO.png" type="Texture" id=2]
+[ext_resource path="res://assets/items/RUNA.png" type="Texture" id=3]
+[ext_resource path="res://background/ParallaxBg10.tscn" type="PackedScene" id=4]
+
+[node name="BloqueFinal" type="Node" index="0"]
+
+[node name="arbol" type="Sprite" parent="." index="0"]
+
+modulate = Color( 0.337255, 0.027451, 0.313726, 1 )
+position = Vector2( 224.619, 268.653 )
+scale = Vector2( 0.508508, 0.508508 )
+texture = ExtResource( 1 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="Baculo" type="Sprite" parent="." index="1"]
+
+modulate = Color( 0.337255, 0.027451, 0.313726, 1 )
+position = Vector2( 281.32, 371.692 )
+scale = Vector2( 0.521069, 0.521069 )
+texture = ExtResource( 2 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="runa" type="Sprite" parent="." index="2"]
+
+modulate = Color( 0.337255, 0.027451, 0.313726, 1 )
+position = Vector2( 345.006, 391.507 )
+scale = Vector2( 0.51685, 0.51685 )
+texture = ExtResource( 3 )
+_sections_unfolded = [ "Visibility" ]
+
+[node name="ParallaxBackground" parent="." index="3" instance=ExtResource( 4 )]
+
+[node name="tierra" type="Polygon2D" parent="." index="4"]
+
+modulate = Color( 0.337255, 0.027451, 0.313726, 1 )
+position = Vector2( 16.8381, -19.5266 )
+scale = Vector2( 1.12963, 1 )
+polygon = PoolVector2Array( 4.79974, 601.37, 24.3263, 548.369, 35.4843, 520.474, 60.5899, 487, 80.1165, 470.263, 110.801, 450.736, 130.328, 442.367, 169.381, 439.578, 180.539, 439.578, 222.381, 436.788, 222.381, 436.788, 267.014, 436.788, 303.277, 445.157, 311.646, 447.947, 333.962, 450.736, 359.067, 461.894, 359.067, 461.894, 384.173, 475.842, 395.331, 487, 400.91, 498.158, 423.226, 514.895, 431.595, 534.421, 439.963, 553.948, 451.121, 579.053, 451.121, 593.001, 451.121, 609.738, 451.121, 643.212, -0.779297, 640.423 )
+uv = PoolVector2Array(  )
+color = Color( 1, 1, 1, 1 )
+vertex_colors = PoolColorArray(  )
+offset = Vector2( 0, 0 )
+antialiased = false
+texture = null
+texture_offset = Vector2( 0, 0 )
+texture_scale = Vector2( 1, 1 )
+texture_rotation_degrees = 0.0
+invert_enable = false
+invert_border = 100.0
+_sections_unfolded = [ "Visibility" ]
+
+
