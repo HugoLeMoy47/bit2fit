@@ -3,6 +3,9 @@
 importer="texture"
 type="StreamTexture"
 path="res://.import/PLAYER SHEET.png-c330d7472aa7c1c7c48336cb5139885b.stex"
+metadata={
+"vram_texture": false
+}
 
 [deps]
 
@@ -14,6 +17,7 @@ dest_files=[ "res://.import/PLAYER SHEET.png-c330d7472aa7c1c7c48336cb5139885b.st
 compress/mode=0
 compress/lossy_quality=0.7
 compress/hdr_mode=0
+compress/bptc_ldr=0
 compress/normal_map=0
 flags/repeat=0
 flags/filter=true
@@ -23,6 +27,7 @@ flags/srgb=2
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/HDR_as_SRGB=false
+process/invert_color=false
 stream=false
 size_limit=0
 detect_3d=true
