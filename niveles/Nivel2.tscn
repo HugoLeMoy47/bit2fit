@@ -1,14 +1,15 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://niveles/Nivel2.gd" type="Script" id=1]
 [ext_resource path="res://background/ParallaxBg2.tscn" type="PackedScene" id=2]
 [ext_resource path="res://terrain/suelos.tres" type="TileSet" id=3]
 [ext_resource path="res://escenas/trees/Arbol_aislado3.tscn" type="PackedScene" id=4]
 [ext_resource path="res://escenas/trees/Arbol_aislado.tscn" type="PackedScene" id=5]
-[ext_resource path="res://player/Player.tscn" type="PackedScene" id=6]
-[ext_resource path="res://entrada3.tscn" type="PackedScene" id=7]
+[ext_resource path="res://objetos/PuertaCambio.tscn" type="PackedScene" id=6]
 
-[node name="Nivel2" type="Node"]
+[node name="Nivel2" type="Node" groups=[
+"nivel",
+]]
 
 script = ExtResource( 1 )
 
@@ -45,12 +46,10 @@ _sections_unfolded = [ "Transform", "Visibility" ]
 
 position = Vector2( 730.851, 94.8432 )
 
-[node name="Player" parent="." index="4" instance=ExtResource( 6 )]
+[node name="PuertaCambio" parent="." index="4" instance=ExtResource( 6 )]
 
-position = Vector2( 92.1016, 426.954 )
+position = Vector2( 1160.03, 418.902 )
 
-[node name="entrada3" parent="." index="5" instance=ExtResource( 7 )]
-
-position = Vector2( 1181.55, 373.302 )
+[connection signal="cambioNivel" from="PuertaCambio" to="." method="_on_PuertaCambio_cambioNivel"]
 
 

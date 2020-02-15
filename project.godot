@@ -11,7 +11,7 @@ config_version=3
 [application]
 
 config/name="MaquetaBlanca"
-run/main_scene="res://niveles/Nivel0.tscn"
+run/main_scene="res://menuInicio/MenuInicio.tscn"
 config/icon="res://icon.png"
 
 [display]

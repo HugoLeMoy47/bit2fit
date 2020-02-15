@@ -5,7 +5,7 @@ extends KinematicBody2D
 # var b = "textvar"
 
 var velocidad = Vector2()
-export var speed =500
+export var speed =300
 var gravedad = 1000
 var jump = -450
 var normal = Vector2(0,-1)
@@ -74,3 +74,8 @@ func _on_romper_body_entered(body):
 		$Sprite.modulate = "#991bd9"
 		body.queue_free()
 	pass # replace with function body
+
+func start(positionInicio):
+	#Modifica la posion incial
+	global_position = positionInicio
+	pass

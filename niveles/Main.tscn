@@ -1,0 +1,36 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://niveles/Main.gd" type="Script" id=1]
+[ext_resource path="res://GUI/GUI.tscn" type="PackedScene" id=2]
+[ext_resource path="res://niveles/Nivel0.tscn" type="PackedScene" id=3]
+[ext_resource path="res://player/Player.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Musica/MusicaDeFondo.wav" type="AudioStream" id=5]
+
+[node name="Main" type="Node"]
+
+script = ExtResource( 1 )
+
+[node name="GUI" parent="." index="0" instance=ExtResource( 2 )]
+
+[node name="Nivel0" parent="." index="1" instance=ExtResource( 3 )]
+
+[node name="Player" parent="." index="2" instance=ExtResource( 4 )]
+
+position = Vector2( 62.0238, 423.994 )
+
+[node name="PositionInicio" type="Position2D" parent="." index="3"]
+
+position = Vector2( 39.0532, 379.374 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." index="4"]
+
+stream = ExtResource( 5 )
+volume_db = 0.0
+pitch_scale = 1.0
+autoplay = true
+mix_target = 0
+bus = "Master"
+
+[connection signal="cambiarNivel" from="Nivel0" to="." method="_on_Nivel0_cambiarNivel"]
+
+

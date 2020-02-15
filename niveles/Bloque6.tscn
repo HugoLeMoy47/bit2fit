@@ -1,14 +1,15 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://niveles/Bloque6.gd" type="Script" id=1]
 [ext_resource path="res://background/ParallaxBg8.tscn" type="PackedScene" id=2]
 [ext_resource path="res://assets/items/ARBOL BLOQUE6.png" type="Texture" id=3]
 [ext_resource path="res://assets/items/CHOZA.png" type="Texture" id=4]
 [ext_resource path="res://terrain/suelos.tres" type="TileSet" id=5]
-[ext_resource path="res://Entrada6.tscn" type="PackedScene" id=6]
-[ext_resource path="res://player/Player.tscn" type="PackedScene" id=7]
+[ext_resource path="res://objetos/PuertaCambio.tscn" type="PackedScene" id=6]
 
-[node name="Bloque6" type="Node"]
+[node name="Bloque6" type="Node" groups=[
+"nivel",
+]]
 
 script = ExtResource( 1 )
 
@@ -68,12 +69,10 @@ invert_enable = false
 invert_border = 100.0
 _sections_unfolded = [ "Visibility" ]
 
-[node name="Entrada6" parent="." index="5" instance=ExtResource( 6 )]
+[node name="PuertaCambio" parent="." index="5" instance=ExtResource( 6 )]
 
-position = Vector2( 1142.23, 394.657 )
+position = Vector2( 963.323, 422.795 )
 
-[node name="Player" parent="." index="6" instance=ExtResource( 7 )]
-
-position = Vector2( 42.9498, 449.229 )
+[connection signal="cambioNivel" from="PuertaCambio" to="." method="_on_PuertaCambio_cambioNivel"]
 
 
